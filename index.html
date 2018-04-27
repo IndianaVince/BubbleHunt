@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+    Jeu créé dans le cadre du MOOC Introduction à HTML5 - Animations et jeux sur la plateforme https://www.fun-mooc.fr.
+    @author : vincent HOFMAN
+    @version 1.0 du 03/04/2018
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BubbleHunt !</title>
+    <link rel="stylesheet" href="css/style.css" media="screen"/>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <main>
+        <!--Accueil du jeu-->
+            <section id="ecranAccueil">
+            <header><h1>BubbleHunt</h1></header>
+            <figure><img src="./img/bub-bob.png" alt="dragon du jeu bubble bobble sur NES" title="Vieille référence... ;-D"/></figure>
+            <p id="regle">Déplacez la bulle bleue avec la souris pour attraper les bulles vertes.</p>
+            <div><button id="btnJouer">Jouer</button></div>
+        </section>
+        <!--Partie jeu-->
+        <section id="ecranJeu">
+            <p id="score">(score)</p>
+            <p id="niveau">(niveau)</p>
+            <p id="vies">(vies)</p>
+            <p id="temps">(temps)</p>
+            <canvas id="dessin" width="450" height="300">
+                Votre navigateur ne supporte pas la balise canvas, mettez le à jour.
+            </canvas>
+            <div><button id="btnQuitter">Quitter</button></div>
+        </section>
+        <!-- Partie bilan -->
+        <section id="ecranBilan">
+            <!-- Message qui indiquera au joueur que le temps est écoulé ; c'est moins violent... -->
+            <p id="message">Déjà fini ???<p>
+            <p id="scoreFinal">(score)</p>
+            <p id="niveauFinal">(niveau)</p>
+            <div>
+                <button id="btnAccueil">Accueil</button>
+                <button id="btnRejouer">Rejouer</button>
+            </div>
+
+
+
+        </section>
+        <!-- Le footer est commun à toutes les sections. -->
+        <footer>BubbleHunt v1.0</footer>
+    </main>
+</body>
+</html>
